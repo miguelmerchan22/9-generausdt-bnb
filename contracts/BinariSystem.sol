@@ -150,8 +150,8 @@ contract BinarySystem is Context, Admin{
   address public tokenPricipal = token;
 
   uint256 public inversiones = 1;
-  uint256[] public primervez = [80, 0, 0, 0, 0];
-  uint256[] public porcientos = [80, 0, 0, 0, 0];
+  uint256[] public primervez = [60, 0, 0, 0, 0];
+  uint256[] public porcientos = [60, 0, 0, 0, 0];
   uint256[] public porcientosSalida = [20, 10, 10, 5, 5];
 
   uint256[] public plans = [0, 25*10**18, 50*10**18, 100*10**18, 250*10**18, 500*10**18, 1000*10**18, 2500*10**18, 5000*10**18, 10000*10**18];
@@ -162,12 +162,12 @@ contract BinarySystem is Context, Admin{
 
   bool public onOffWitdrawl = true;
 
-  uint256 public dias = 111;
+  uint256 public dias = 300;
   uint256 public unidades = 86400;
 
   uint256 public porcent = 200;
 
-  uint256 public porcentPuntosBinario = 8;
+  uint256 public porcentPuntosBinario = 5;
 
   uint256 public descuento = 90;
   uint256 public personas = 2;
@@ -191,9 +191,9 @@ contract BinarySystem is Context, Admin{
   uint256 public activerFee = 1;
   // 0 desactivada total | 1 activa 5% fee retiro | 2 activa fee retiro y precio de registro
 
-  address[] public wallet = [0x4490566647735e8cBCe0ce96efc8FB91c164859b,0x7F5420df220D14A1A8D83ec2d8B4963cDB1414b8, 0x574e3BAB93BB789BaF30EA6c37caCc2dc132B9a2, 0xFE1cD2513b8f69bA728b0d2C65932a46d260A321, 0x9aBD7f03580b3147A8f1eB326e3ff65bD6fE7085];
+  address[] public wallet = [0x4490566647735e8cBCe0ce96efc8FB91c164859b,0x20818Da6Dda82748638E94cFE68f61b2Ef3eBEa8, 0xeC028862024B4E18824a97ff7a594F79011fB83B, 0x1DC35b397aB850F317b5266261A5B16ac54f460E, 0x2c1A316b8Fe9B683A0Afe5afF91f047DfbaA687d];
   bool[] public transfer = [true, true, true, true, true];
-  uint256[] public valor = [5, 4, 2, 2, 2];
+  uint256[] public valor = [8, 5, 5, 5, 57];
 
   constructor() {
 
