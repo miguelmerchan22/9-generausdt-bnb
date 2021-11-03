@@ -446,7 +446,7 @@ export default class CrowdFunding extends Component {
             <Select options={options}  onChange={this.handleChangeUSDT} className="form-control mb-20 h-auto" />
           </div>
 
-            <p className="card-text">At least 150 TRX to make any transactions</p>
+            <p className="card-text">At least 0.03 BNB to make any transactions</p>
             <p className="card-text">Partner:<br />
             <strong>{this.state.partner}</strong></p>
 
