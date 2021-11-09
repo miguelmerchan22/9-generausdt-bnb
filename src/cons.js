@@ -2,7 +2,7 @@ const proxy = "https://proxy-sites.herokuapp.com/";
 
 const PRE = "https://precio-site.herokuapp.com/api/v1/servicio/precio/v2/SITE";
 
-const WS = "0xAFD76502Fb6EB876301f63B95F03EBcFc3c422fc";//0x0000000000000000000000000000000000000000 recibe los huerfanos por defecto
+const WS = "0x5EB10DFBfb5d2618C04532c9281E8E7ae8285b25";//0x0000000000000000000000000000000000000000 recibe los huerfanos por defecto
 
 const SCtest = "0xEC836b3F0fa7BF1579ab32C57A4e7dee971ccDcE";// direccion del contrato de pruebas test only no real
 
