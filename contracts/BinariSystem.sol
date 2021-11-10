@@ -154,8 +154,8 @@ contract BinarySystem is Context, Admin{
   uint256[] public porcientos = [60, 0, 0, 0, 0];
   uint256[] public porcientosSalida = [20, 10, 5, 3, 2];
 
-  uint256[] public plans = [0, 25*10**18, 50*10**18, 100*10**18, 250*10**18, 500*10**18, 1000*10**18, 2500*10**18, 5000*10**18, 10000*10**18];
-  bool[] public active = [false, true, true, true, true, true, true, true, true, true];
+  uint256[] public plans = [0, 50*10**18, 100*10**18, 250*10**18, 500*10**18, 1000*10**18, 2500*10**18, 5000*10**18, 10000*10**18];
+  bool[] public active = [false, true, true, true, true, true, true, true, true];
 
   uint256[] public gananciasRango = [50*10**18, 200*10**18, 500*10**18, 1200*10**18, 6000*10**18, 15000*10**18, 50000*10**18 ];
   uint256[] public puntosRango = [5000*10**18, 20000*10**18, 50000*10**18, 120000*10**18, 600000*10**18, 1500000*10**18, 5000000*10**18];
