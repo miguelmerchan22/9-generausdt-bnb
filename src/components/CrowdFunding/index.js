@@ -341,10 +341,16 @@ export default class CrowdFunding extends Component {
           
         }
 
-        if(!investors.registered){
+        if(!investors.registered && sponsor !== "0x0000000000000000000000000000000000000000"){
           var reg = this.props.wallet.contractBinary.methods.registro(sponsor, hand).send({from:this.state.currentAccount});
           reg.then(() => window.alert("congratulation registration: successful"));
           return;
+        }else{
+          if (!investors.registered) {
+            alert("you need a referral link to register");
+            return;
+          }
+          
         }
 
         if(sponsor !== "0x0000000000000000000000000000000000000000" && investors.registered && await this.props.wallet.contractBinary.methods.active(valueUSDT).call({from:this.state.currentAccount}) ){
@@ -409,12 +415,6 @@ export default class CrowdFunding extends Component {
 
     var {options} = this.state;
 
-    var segundoToken = <></>;
-
-    if (this.state.nameToken1 !== this.state.nameToken2) {
-      segundoToken = <>{this.state.nameToken2}: <strong>{(this.state.balanceUSDT*1).toFixed(6)}</strong><br /></> ;
-    }
-    
     return (
       <div className="card wow bounceInUp text-center col-md-7" >
         <div className="card-body">
@@ -448,7 +448,7 @@ export default class CrowdFunding extends Component {
 
             <p className="card-text">At least 0.03 BNB to make any transactions</p>
             <p className="card-text">Partner:<br />
-            <strong>{this.state.partner}</strong></p>
+            <strong className="text-danger">{this.state.partner}</strong></p>
 
             <button className="btn btn-lg btn-success" onClick={() => this.deposit()}>{this.state.deposito}</button>
 
