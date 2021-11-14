@@ -185,7 +185,7 @@ contract BinarySystem is Context, Admin{
   
   uint256 public lastUserId = 2;
 
-  address public walletFee = 0x7C989de477ae67D542ced9296329c9717Bb42611;
+  address public walletFee = 0x0556a260b9ef10756bc2Df281168697f353d1E8E;
   uint256 public precioRegistro = 0 * 10**18;
   uint256 public valorFee = 3;
   uint256 public activerFee = 1;
