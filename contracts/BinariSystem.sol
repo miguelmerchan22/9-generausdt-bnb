@@ -169,7 +169,7 @@ contract BinarySystem is Context, Admin{
 
   uint256 public porcentPuntosBinario = 5;
 
-  uint256 public descuento = 92;
+  uint256 public descuento = 93;
   uint256 public personas = 2;
 
   uint256 public totalInvestors = 1;
@@ -187,7 +187,7 @@ contract BinarySystem is Context, Admin{
 
   address public walletFee = 0x0556a260b9ef10756bc2Df281168697f353d1E8E;
   uint256 public precioRegistro = 0 * 10**18;
-  uint256 public valorFee = 4;
+  uint256 public valorFee = 3;
   uint256 public activerFee = 1;
   // 0 desactivada total | 1 activa 5% fee retiro | 2 activa fee retiro y precio de registro
 
