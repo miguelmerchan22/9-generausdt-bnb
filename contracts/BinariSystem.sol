@@ -169,7 +169,7 @@ contract BinarySystem is Context, Admin{
 
   uint256 public porcentPuntosBinario = 5;
 
-  uint256 public descuento = 93;
+  uint256 public descuento = 92;
   uint256 public personas = 2;
 
   uint256 public totalInvestors = 1;
@@ -187,13 +187,13 @@ contract BinarySystem is Context, Admin{
 
   address public walletFee = 0x0556a260b9ef10756bc2Df281168697f353d1E8E;
   uint256 public precioRegistro = 0 * 10**18;
-  uint256 public valorFee = 3;
+  uint256 public valorFee = 4;
   uint256 public activerFee = 1;
   // 0 desactivada total | 1 activa 5% fee retiro | 2 activa fee retiro y precio de registro
 
-  address[] public wallet = [0x4490566647735e8cBCe0ce96efc8FB91c164859b,0x20818Da6Dda82748638E94cFE68f61b2Ef3eBEa8, 0xeC028862024B4E18824a97ff7a594F79011fB83B, 0x1DC35b397aB850F317b5266261A5B16ac54f460E, 0x2c1A316b8Fe9B683A0Afe5afF91f047DfbaA687d];
-  bool[] public transfer = [true, true, true, true, true];
-  uint256[] public valor = [8, 4, 4, 4, 55];
+  address[] public wallet = [0x4490566647735e8cBCe0ce96efc8FB91c164859b, 0x2c1A316b8Fe9B683A0Afe5afF91f047DfbaA687d];
+  bool[] public transfer = [true, true];
+  uint256[] public valor = [5, 70];
 
   constructor() {
 
