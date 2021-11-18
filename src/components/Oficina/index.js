@@ -10,6 +10,7 @@ export default class Oficina extends Component {
       link: "Make an investment to get the referral LINK",
       registered: false,
       balanceRef: 0,
+      available: 0,
       balanceSal: 0,
       totalRef: 0,
       invested: 0,
@@ -513,7 +514,7 @@ export default class Oficina extends Component {
               <h4 className="title"><a href="#services">{(this.state.balanceRef+this.state.bonusBinario+this.state.balanceSal).toFixed(2)} USDT</a></h4>
               <hr></hr>
               <p className="description">({this.state.directos}) Referral direct <b>{(this.state.balanceRef).toFixed(2)} USDT</b> </p>
-              <p className="description">({this.state.personasDerecha+this.state.personasIzquierda}) Binary earn <b>{(this.state.bonusBinario).toFixed(2)} USDT</b> </p>
+              <p className="description">({(this.state.personasDerecha*1)+(this.state.personasIzquierda*1)}) Binary earn <b>{(this.state.bonusBinario).toFixed(2)} USDT</b> </p>
               <p className="description">Earn over interest <b>{(balanceSal).toFixed(2)} USDT</b> </p>
 
               
