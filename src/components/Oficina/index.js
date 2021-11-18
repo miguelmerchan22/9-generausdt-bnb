@@ -395,9 +395,9 @@ export default class Oficina extends Component {
   
 
   render() {
-    var { available, invested,  direccion, link, link2, rango} = this.state;
+    var { available, invested,  direccion, link, link2, rango, balanceSal} = this.state;
 
-    available = (available*1).toFixed(2);
+    available = (available+balanceSal).toFixed(2);
     available = parseFloat(available);
 
     invested = invested.toFixed(2);
@@ -514,7 +514,7 @@ export default class Oficina extends Component {
               <hr></hr>
               <p className="description">({this.state.directos}) Referral direct <b>{(this.state.balanceRef).toFixed(2)} USDT</b> </p>
               <p className="description">({this.state.personasDerecha+this.state.personasIzquierda}) Binary earn <b>{(this.state.bonusBinario).toFixed(2)} USDT</b> </p>
-              <p className="description">Earn over interest <b>{(this.state.balanceSal).toFixed(2)} USDT</b> </p>
+              <p className="description">Earn over interest <b>{(balanceSal).toFixed(2)} USDT</b> </p>
 
               
             </div>
